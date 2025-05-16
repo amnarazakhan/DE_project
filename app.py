@@ -198,7 +198,7 @@ def classify_text(text):
     return ["Negative", "Neutral", "Positive"][predicted_class_id]
 
 # Connect to database
-conn = sqlite3.connect('data.db')
+conn = sqlite3.connect('social_media.db')
 df = pd.read_sql_query("SELECT * FROM reddit_posts", conn)
 
 # Sidebar filter
