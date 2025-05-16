@@ -49,15 +49,19 @@
 #
 # # Close the connection
 # conn.close()
+#
+#
 
 import sqlite3
+import pandas as pd
+import streamlit as st
 
-conn = sqlite3.connect('social_media.db')
-cursor = conn.cursor()
+conn = sqlite3.connect("data.db")
+tables = pd.read_sql_query("SELECT name FROM sqlite_master WHERE type='table';", conn)
+st.write("Tables in the database:", tables)
 
-cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-tables = cursor.fetchall()
+if 'reddit_labelled' not in tables['name'].values:
+    st.error("Table `reddit_labelled` does not exist!")
+    st.stop()
 
-print("Tables in database:", tables)
-conn.close()
-
+#
