@@ -36,6 +36,13 @@ After making sure the requirements are installed, run:
 
 streamlit run app.py
 
+#### How to run prefect
+To execute the data processing pipeline using Prefect, follow these steps:
+
+prefect server start
+
+python flows/main_flow.py
+
 #### _Link to the deck:_
 https://www.canva.com/design/DAGnm5tlrkk/cvjhThKKdOV_c5kQR1rWpQ/edit?utm_content=DAGnm5tlrkk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
