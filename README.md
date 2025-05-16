@@ -40,8 +40,10 @@ streamlit run app.py
 https://www.canva.com/design/DAGnm5tlrkk/cvjhThKKdOV_c5kQR1rWpQ/edit?utm_content=DAGnm5tlrkk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 #### Architecture Diagram 
-
+<html>
 <img src="data architecture diagram.png" alt="Architecture Diagram" width="300" height="200">
+
+</html>
 
 #### Deployed App
 https://social-media-bullying-trends.streamlit.app/
