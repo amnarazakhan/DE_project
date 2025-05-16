@@ -199,7 +199,7 @@ def classify_text(text):
 
 # Connect to database
 conn = sqlite3.connect('social_media.db')
-df = pd.read_sql_query("SELECT * FROM reddit_posts", conn)
+df = pd.read_sql_query("SELECT * FROM reddit_labelled", conn)
 
 # Sidebar filter
 st.sidebar.title("Filters")
