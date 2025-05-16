@@ -135,7 +135,7 @@ col4.metric("Top Platform", filtered_df['Platform'].mode().values[0] if not filt
 
 # === Trend Chart ===
 st.markdown("### 📈 Bullying Trend by Month and Year")
-filtered_df['Year-Month'] = filtered_df['timestamp_utc'].dt.to_period('M').astype(str)
+filtered_df.loc[:, 'Year-Month'] = filtered_df['timestamp_utc'].dt.to_period('M').astype(str)
 trend_monthly = filtered_df[filtered_df['Bullying'] == 1].groupby('Year-Month').size().reset_index(name='Bullying Posts')
 fig_trend_monthly = px.line(trend_monthly, x='Year-Month', y='Bullying Posts',
                             title="Bullying Posts per Month and Year",
