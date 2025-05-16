@@ -36,3 +36,12 @@ After making sure the requirements are installed, run:
 
 streamlit run app.py
 
+#### _Link to the deck:_
+https://www.canva.com/design/DAGnm5tlrkk/cvjhThKKdOV_c5kQR1rWpQ/edit?utm_content=DAGnm5tlrkk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+#### Architecture Diagram 
+
+<img src="data architecture diagram.png" alt="Architecture Diagram" width="300" height="200">
+
+#### Deployed App
+https://social-media-bullying-trends.streamlit.app/
