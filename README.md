@@ -41,7 +41,7 @@ https://www.canva.com/design/DAGnm5tlrkk/cvjhThKKdOV_c5kQR1rWpQ/edit?utm_content
 
 #### Architecture Diagram 
 <html>
-<img src="data architecture diagram.png" alt="Architecture Diagram" width="500" height="500">
+<img src="data architecture diagram.png" alt="Architecture Diagram" width="900" height="900">
 
 </html>
 
